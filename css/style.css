@@ -287,7 +287,6 @@ strong {
   font-weight: 700;
   /* font-family: 'Poppins', sans-serif; */
   text-transform: uppercase;
-  font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -300,6 +299,7 @@ strong {
 }
 
 #hero .btn-get-started:hover {
+  color: #005b94;
   background: #B6C527;
   border: 2px solid #B6C527;
 }
@@ -775,8 +775,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-title {
+
   color: #fff;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -810,8 +811,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
+  font-weight: bold;
+  color: #B6C527;
   background: #005b94;
   border: 2px solid #005b94;
+}
+
+.small-text {
+  font-size: 30px;
+  font-weight: normal;
 }
 
 /* Portfolio Section
