@@ -187,15 +187,12 @@ h6 {
 ----------------------------------------------------
 ----------*/
 
-
-
-
-
-
 #hero {
+  display: block;
   /* display: flex;
   flex-direction: column; */
   width: 100%;
+  height: 100vh;
   /* height: 100vh; */
   /* background-color: #005b94; */
   /* background: url(../img/hero.jpg) top center; */
@@ -205,7 +202,7 @@ h6 {
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 }
 
@@ -219,23 +216,54 @@ h6 {
   right: 0;
 }
 
+#hero .hero-wrapper {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#hero #myVideo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+#hero .text-content {
+  position: relative;
+  /* bottom: 0; */
+  text-align: center;
+  background: rgba(0, 91, 148, 0.6);
+  color: #f1f1f1;
+  width: 100%;
+  /* padding: 20px; */
+}
+
 #hero .hero-container {
   /* flex: 1; */
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; 
+  text-align: center;  */
   margin-top: 5.5em;
   z-index: 2;
+  border: solid red 2px;
 }
 
 .hero-text {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   background: rgba(0, 91, 148, 0.6);
   padding: 10px 40px;
   z-index: 1;
@@ -243,15 +271,33 @@ h6 {
 
 #hero .video-container {
   width: 100%;
+  height: 100vh;
+  /* height: 100vh; */
 }
 
 .video-section {
-  width: 100%;
-  /* height: 100vh; */
+  /* width: 100%; */
+  height: 100%;
 }
 
 .video-clip {
   width: 100%;
+  height: 100vh;
+  /* height: 100vh; */
+}
+
+.iframe-container {
+  /* position: relative; */
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #hero h1 {
@@ -305,8 +351,8 @@ strong {
 
 #hero .btn-get-started:hover {
   color: #005b94;
-  background: #B6C527;
-  border: 2px solid #B6C527;
+  background: #b6c527;
+  border: 2px solid #b6c527;
 }
 
 /*--------------------------------------------------------------
@@ -600,16 +646,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 40px;
 }
 
-#about .about-container .background {
+/* #about .about-container .background {
   margin: top: 5em;
   min-height: 300px;
   background: url(../img/chuck3.png) center top no-repeat;
   margin-bottom: 10px;
   border
-}
+} */
 
 #about .about-container .content {
   /* background: #f7f7f7; */
+}
+
+.about-img {
+  position: fixed;
+  width: 100%;
 }
 
 #about .about-container .title {
@@ -780,7 +831,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-title {
-
   color: #fff;
   font-size: 40px;
   font-weight: 700;
@@ -817,7 +867,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #call-to-action .cta-btn:hover {
   font-weight: bold;
-  color: #B6C527;
+  color: #b6c527;
   background: #005b94;
   border: 2px solid #005b94;
 }

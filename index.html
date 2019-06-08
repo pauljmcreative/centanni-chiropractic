@@ -74,22 +74,38 @@
   <!--==========================
     Hero Section
   ============================-->
+
   <section id="hero">
-    <div class="dark"></div>
-    <div class="hero-container">
-      <div class="hero-text">
+      <div class=hero-wrapper>
+        <section class="video">
+          <video controls autoplay loop>
+            <source src="videos/walk.mp4" type="video/mp4">
+            <source src="../img/resized.webm" type="video/webm" >
+          </video>
+        </section>
+   
+        <div class="text-content dark"></div>
+        <h1>Welcome to CentAnni Chiropractic</h1>
+        <h2>AN <strong>INTEGRATIVE</strong> APPROACH TO <strong>HEALTH</strong> AND <strong>LONGEVITY</strong></h2>
+        <a href="#about" class="btn-get-started">Get Started</a>
+      </div>
+    </section>
+
+
+
+  <!-- <section id="hero">
+    <div class=hero-wrapper>
+      <video autoplay muted loop id="myVideo">
+        <source src="../img/resized.mp4" type="video/mp4">
+        <source src="../img/resized.webm" type="video/webm" >
+      </video>
+      <div class="text-content dark">
         <h1>Welcome to CentAnni Chiropractic</h1>
         <h2>AN <strong>INTEGRATIVE</strong> APPROACH TO <strong>HEALTH</strong> AND <strong>LONGEVITY</strong></h2>
         <a href="#about" class="btn-get-started">Get Started</a>
       </div>
     </div>
-    <figure class="video-container" data-fullscreen="true">
-      <video class="video-section" autoplay loop muted controls>
-        <source class="video-clip" src="../img/resized.mp4" type="video/mp4">
-        <p class="warning">Your browser does not support HTML5 video.</p>
-      </video>
-    </figure>
-  </section><!-- #hero -->
+  </section> -->
 
   <main id="main">
 
@@ -99,7 +115,7 @@
     <section id="about">
       <div class="container">
         <div class="row about-container">
-
+            <!-- <img class="about-img" src="../img/bridge.jpg" alt="Salem Bridge Image"> -->
           <div class="col-lg-6 content order-lg-1 order-2">
             <h2 class="title mainAbout">Few Words About Us</h2>
             <p>
@@ -125,7 +141,7 @@
             </div>
 
           </div>
-
+          
           <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
         </div>
 
