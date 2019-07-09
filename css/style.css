@@ -1037,6 +1037,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
+#contact .error {
+  color: red;
+  font-style: italic;
+}
+
 #contact .form #errormessage {
   color: red;
   display: none;
@@ -1079,6 +1084,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form button[type='submit']:hover {
   background: #51d8ad;
 }
+
+/* CODEPEN STYLES */
+.alert {
+  display: none;
+}
+
+/**
+ * Error color for the validation plugin
+ */
+
+.error {
+  color: #e74c3c;
+}
+/* //////////////////////// */
 
 /*--------------------------------------------------------------
 # Footer
