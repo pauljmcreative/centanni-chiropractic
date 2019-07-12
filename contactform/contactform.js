@@ -17,6 +17,11 @@ $(document).ready(function() {
         required: true,
         email: true
       },
+      phone: {
+        required: true,
+        minlength: 7,
+        letters: false
+      },
       subject: {
         required: true,
         minlength: 3
@@ -29,6 +34,7 @@ $(document).ready(function() {
     messages: {
       name: 'Please specify your name (only letters and spaces are allowed)',
       email: 'Please specify a valid email address',
+      phone: 'Please specify a valid phone number',
       subject: 'Please specify a subject',
       message: 'Please specify a message'
     },
@@ -36,6 +42,7 @@ $(document).ready(function() {
       // Create variables from the form
       let name = $('#name').val();
       let email = $('#email').val();
+      let phone = $('#phone').val();
       let subject = $('#subject').val();
       let message = $('#message').val();
 
