@@ -130,6 +130,21 @@ h6 {
   z-index: 997;
 }
 
+#header .infoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+}
+
 #header #logo {
   float: left;
   /* background: rgba(0, 91, 148, 0.9); */
@@ -581,6 +596,35 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
+/* Banner Section
+--------------------------------*/
+#banner {
+  background-color: #005b94;
+  color: white;
+  padding: 15px 0;
+}
+
+#banner .banner-text {
+  text-align: center;
+}
+
+#banner p,
+h3 {
+  margin: 0;
+}
+
+#banner h3 {
+  padding-bottom: 7px;
+}
+
+#banner p {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 0.25px;
+  padding-left: 90px;
+}
+
 /* About Us Section
 --------------------------------*/
 #about {
@@ -782,11 +826,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 769px) {
-  /* #call-to-action .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  } */
 }
 
 #call-to-action .cta-btn {
@@ -978,6 +1017,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+#contact .contact-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .contact-form-section {
   display: flex;
   justify-content: space-between;
@@ -985,6 +1030,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info {
   color: #333333;
+  margin-bottom: 30px;
 }
 
 #contact .info i {
@@ -1006,6 +1052,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .social-links {
   padding-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #contact .social-links a {
@@ -1020,11 +1067,47 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  margin-left: 8px;
 }
 
 #contact .social-links a:hover {
   background: #005b94;
   color: #fff;
+}
+
+#contact .cta-text {
+  color: #b6c527;
+}
+
+@media (min-width: 769px) {
+  #contact .cta-btn-container {
+    display: block;
+  }
+}
+
+#contact .cta-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  /* font-family: 'Poppins', sans-serif; */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  /* margin: 10px; */
+  border: 2px solid #005b94;
+  color: #005b94;
+  margin-bottom: 40px;
+}
+
+#contact .cta-btn:hover {
+  font-weight: bold;
+  color: #b6c527;
+  background: #005b94;
+  border: 2px solid #005b94;
 }
 
 #contact .form #sendmessage {
